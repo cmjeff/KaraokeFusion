@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Upload</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <br />
+    <h1>Audio Upload</h1>
+    <div class="upload-files-container">
+      <div class="drag-file-area">
+        <span class="material-icons-outlined upload-icon"> file_upload </span>
+        <h3 class="dynamic-message">Drag & drop MP3 file here</h3>
+        <form
+          id="upload-form"
+          action="/upload_Audio"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <label class="label">
+            <input
+              type="file"
+              id="audioFile"
+              name="audio"
+              accept="audio/mpeg"
+            />
+            <span class="browse-files-text">browse file</span>
+            <span>from device</span>
+          </label>
+        </form>
+      </div>
+      <span class="cannot-upload-message">
+        <span class="material-icons-outlined">error</span> Please select a file
+        first
+        <span class="material-icons-outlined cancel-alert-button">cancel</span>
+      </span>
+      <div class="file-block">
+        <div class="file-info">
+          <span class="material-icons"> audiotrack </span>
+          <span class="file-name"> </span> | <span class="file-size"> </span>
+        </div>
+        <span class="material-icons remove-file-icon">delete</span>
+        <div class="progress-bar"></div>
+      </div>
+      <button id="upload-button" type="button" class="upload-button">
+        Upload
+      </button>
+    </div>
+    <form id="submit-form" action="/submit_Audio" method="POST">
+      <div class="sel sel--audio-file">
+        <select id="mp3-dropdown" name="mp3File" data-placeholder="MP3 File">
+          <!-- <option value="" disabled>Music</option> -->
+        </select>
+      </div>
+      <input type="submit" value="Select" />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

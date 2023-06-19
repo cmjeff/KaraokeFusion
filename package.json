@@ -1,0 +1,25 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "Web Project for Jeff Wong",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "archiver": "^5.3.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "mic": "^2.1.2",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^3.2.1",
+    "spleeter": "^0.1.0"
+  }
+}

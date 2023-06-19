@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LRC Maker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>LRC Upload</h1>
+    <audio id="player1" controls>
+      <source id="audioSource" src="" type="audio/mpeg" />
+    </audio>
+    <br />
+    <div class="form-container">
+      <div class="upload-lrc-container">
+        <div class="upload-files-container">
+          <div class="drag-file-area">
+            <span class="material-icons-outlined upload-icon">
+              file_upload
+            </span>
+            <h3 class="dynamic-message">Drag & drop LRC file here</h3>
+            <form
+              id="upload-form"
+              action="/upload_lrc"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <label class="label">
+                <input
+                  type="file"
+                  id="lrcFile"
+                  name="lrcUpload"
+                  accept=".lrc"
+                />
+                <span class="browse-files-text">browse file</span>
+                <span>from device</span>
+              </label>
+            </form>
+          </div>
+          <span class="cannot-upload-message">
+            <span class="material-icons-outlined">error</span> Please select a
+            file first
+            <span class="material-icons-outlined cancel-alert-button"
+              >cancel</span
+            >
+          </span>
+          <div class="file-block">
+            <div class="file-info">
+              <span class="material-icons-outlined"> description </span>
+              <span class="file-name"></span> | <span class="file-size"></span>
+            </div>
+            <span class="material-icons remove-file-icon">delete</span>
+            <div class="progress-bar"></div>
+          </div>
+          <button id="upload-button" type="button" class="upload-button">
+            Upload
+          </button>
+        </div>
+      </div>
+
+      <h2 data-text="OR"></h2>
+
+      <form id="lrc-form">
+        <h4>Create your own .LRC File</h4>
+        <textarea
+          id="lyrics"
+          name="lyrics"
+          rows="4"
+          cols="60"
+          placeholder="Enter Lyrics here"
+        ></textarea>
+        <input id="lyrics-lrc-button" type="button" value="Start" />
+        <div id="title-container" style="display: none; align-items: center">
+          <label for="title" style="font-weight: bold; margin-right: 10px"
+            >Title:</label
+          >
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Enter Title"
+          style="
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+          "
+        />
+      </div>
+        <br />
+        <div id="lyrics-container" class="div-spacing"></div>
+        <div
+          id="create-lrc-button-container"
+          style="display: none; text-align: center"
+        >
+          <button id="create-lrc-button">Create LRC</button>
+        </div>
+      </form>
+    </div>
+    <div class="form-container">
+      <div class="sel sel--lrc-file">
+        <select id="lrc-dropdown" name="lrcFile">
+          <option value="">None</option>
+        </select>
+      </div>
+      <button id="create-audio-lyrics-button" type="submit" class="submit-button">
+        <span class="button__text">Create Karoke</span>
+      </button>
+    </div>
+
+    <script src="lrc_maker.js"></script>
+  </body>
+</html>
