@@ -22,19 +22,19 @@ node server.js
 ```
 Type localhost:3000 in your browser bar
 
-![tut](tutorial\tutorial1.JPG)
+![tut](tutorial/tutorial1.JPG)
 
 Upload and select your mp3 file
 
-![tut](tutorial\tutorial2.JPG)
+![tut](tutorial/tutorial2.JPG)
 
 Upload or create your own lrc file
 
-![tut](tutorial\tutorial3.JPG)
+![tut](tutorial/tutorial3.JPG)
 
 Enjoy your self-produced karaoke video!
 
-![tut](tutorial\tutorial4.JPG)
+![tut](tutorial/tutorial4.JPG)
 
 ** 
 Toggling the Karaoke mode mutes the vocal elements of the music, allowing you to sing with just the instrumentals.
