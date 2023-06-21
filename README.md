@@ -1,6 +1,6 @@
 # KaraokeFusion
 
-KaraokeFusion is a personal web project that allows users to create personalized karaoke videos by integrating user-uploaded .mp3 audio files with corresponding .lrc lyric files.
+KaraokeFusion is a personal web project that allows users to create personalized karaoke videos by integrating user-uploaded .mp3 audio files with corresponding .lrc lyric files. The software also separates the vocal elements from the accompanying musical components, enabling users to relish a purely instrumental experience.
 
 ## Installation
 Use the package manager [npm](https://docs.npmjs.com/) to install express and multer.
@@ -20,7 +20,24 @@ To use KarokeFusion, start the server with the following command line in the ter
 ```bash
 node server.js
 ```
+Type localhost:3000 in your browser bar
 
+![tut](tutorial\tutorial1.JPG)
+
+Upload and select your mp3 file
+
+![tut](tutorial\tutorial2.JPG)
+
+Upload or create your own lrc file
+
+![tut](tutorial\tutorial3.JPG)
+
+Enjoy your self-produced karaoke video!
+
+![tut](tutorial\tutorial4.JPG)
+
+** 
+Toggling the Karaoke mode mutes the vocal elements of the music, allowing you to sing with just the instrumentals.
 
 ## Contributing
 
