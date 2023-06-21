@@ -16,10 +16,11 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install spleete
 pip install spleeter
 ```
 ## Usage
-To use KarokeFusion, start the server with:
+To use KarokeFusion, start the server with the following command line in the terminal:
 ```bash
 node server.js
 ```
+
 
 ## Contributing
 
