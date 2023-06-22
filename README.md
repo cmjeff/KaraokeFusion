@@ -26,8 +26,7 @@ Type localhost:3000 in your browser bar
 
 Upload and select your mp3 file
 
-![tut](tutorial/tutorial2.JPG)
-![tut](tutorial/tutorial2.JPG)
+![tut](tutorial/tutorial2.jpg)
 
 Upload or create your own lrc file
 
